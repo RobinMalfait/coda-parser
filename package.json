@@ -1,0 +1,33 @@
+{
+  "name": "coda-parser",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "tdd": "vitest watch",
+    "format": "prettier . --write",
+    "build": "tsup ./src/index.ts --format esm --clean --minify --dts"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "keywords": [
+    "coda",
+    "parser"
+  ],
+  "author": "Robin Malfait",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2",
+    "vitest": "^0.34.6"
+  }
+}
